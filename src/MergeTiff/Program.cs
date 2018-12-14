@@ -77,18 +77,19 @@ namespace MergeTiff {
 
     class Program {
         static void Main(string[] args) {
-            var img = File.ReadAllBytes("resources/Thailand.tiff");
-            var images = new[] {
-                img,
-                img,
-                img
-            };
+            // var img = File.ReadAllBytes("resources/Thailand.tiff");
+            // var images = new[] {
+            //     img,
+            //     img,
+            //     img
+            // };
 
             var tiff = new TiffImage();
             // var merged = tiff.Merge(images);
             // File.WriteAllBytes(".output/Thailand.tiff", merged);
 
             var files = new[] {
+                "resources/Thailand.0.tiff",
                 "resources/Thailand.1.tiff",
                 "resources/Thailand.2.tiff",
             };

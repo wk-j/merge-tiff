@@ -7,11 +7,11 @@ namespace MergeTiff {
 
     class Program {
         static void Main(string[] args) {
-            var img = File.ReadAllBytes("resources/Thailand.1.tiff");
+            var i1 = File.ReadAllBytes("resources/Thailand.1.tiff");
+            var i2 = File.ReadAllBytes("resources/8.tiff");
             var images = new[] {
-                    img,
-                    img,
-                    img
+                    i1,
+                    i2
                 };
 
             var tiff = new TiffImage();

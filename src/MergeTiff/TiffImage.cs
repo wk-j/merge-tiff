@@ -36,7 +36,7 @@ namespace MergeTiff {
 
                     ep.Param[0] = new EncoderParameter(enc, (long)EncoderValue.FrameDimensionPage);
 
-                    var bm = (Bitmap)Image.FromStream(merged);
+                    var bm = new Bitmap(new MemoryStream(x));
                     pages.SaveAdd(bm, ep);
 
                     if (i == images.Count() - 1) {
